@@ -4,7 +4,8 @@
   "description": "My first Electron app",
   "main": "main.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "./node_modules/.bin/electron ."
   },
   "keywords": [],
   "author": "sowju",
