@@ -3,11 +3,23 @@
   <head>
     <meta charset='UTF-8'>
     <title>Hello World!</title>
-  </head>
+  </head>pr
   <body>
     <h1>Hello World!</h1>
     We are using node <script>document.write(process.versions.node)</script>,
     Chrome <script>document.write(process.versions.chrome)</script>,
     and Electron <script>document.write(process.versions.electron)</script>
+    <div id="map"></div>
+    <script type="text/javascript">
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+    </script>
   </body>
 </html>

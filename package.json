@@ -5,12 +5,15 @@
   "main": "main.js",
   "scripts": {
     "test": "mocha",
-    "start": "./node_modules/.bin/electron ."
+    "start": "./node_modules/.bin/electron .",
+    "start-server": "node server"
   },
   "keywords": [],
   "author": "sowju",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^1.2.0",
+    "ejs": "^2.3.4",
     "electron-prebuilt": "^0.36.2"
   }
 }

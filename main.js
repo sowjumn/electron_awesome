@@ -1,4 +1,6 @@
 const electron = require('electron');
+
+
 const app = electron.app; // module to control application life
 const BrowserWindow = electron.BrowserWindow; // module to create native browser window
 
@@ -18,9 +20,7 @@ app.on('window-all-closed', function() {
 app.on('ready', function() {
   // Create the browser window.
   mainWindow = new BrowserWindow({width: 800, height: 600});
-
-  // load the index.html of the app
-  mainWindow.loadURL('file://' + __dirname + '/index.html');
+  mainWindow.loadURL('http://localhost:8080');
 
   // Open the DevTools
   mainWindow.webContents.openDevTools();
