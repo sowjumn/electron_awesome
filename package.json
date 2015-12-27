@@ -10,6 +10,6 @@
   "author": "sowju",
   "license": "ISC",
   "dependencies": {
-    "electron": "^0.4.1"
+    "electron-prebuilt": "^0.36.2"
   }
 }
